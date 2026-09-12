@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spice & Savor</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="#home"><span>SPICE</span> &amp; SAVOR</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#reservation" class="nav-button">
+                Book a Table
+            </a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="subtitle">WELCOME TO SPICE & SAVOR</p>
+
+                <h2>Taste the Difference</h2>
+
+                <p>
+                    Fresh ingredients, authentic flavors,
+                    and unforgettable dining experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="primary-button">
+                        View Menu
+                    </a>
+
+                    <a href="#reservation" class="secondary-button">
+                        Book a Table
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+
+            <div class="section-heading">
+                <p class="subtitle">OUR MENU</p>
+                <h2>Explore Our Dishes</h2>
+                <p>
+                    Discover delicious meals prepared
+                    with fresh ingredients.
+                </p>
+            </div>
+
+            <div class="menu-buttons">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="starter">Starters</button>
+                <button data-filter="main">Main Course</button>
+                <button data-filter="dessert">Desserts</button>
+                <button data-filter="drink">Drinks</button>
+            </div>
+
+
+            <div class="food-container">
+
+                <div class="food-card" data-category="main">
+                    <div class="food-image" style="background-image: url('https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=900&q=85');"></div>
+
+                    <div class="food-info">
+
+                        <h3>Chicken Biryani</h3>
+
+                        <p>
+                            Aromatic basmati rice with
+                            tender chicken and spices.
+                        </p>
+
+                        <div class="food-bottom">
+                            <span>Rs. 1,250</span>
+                            <button class="add-button">Add to table</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="food-card" data-category="main">
+                    <div class="food-image" style="background-image: url('https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=85');"></div>
+
+                    <div class="food-info">
+
+                        <h3>Chicken Kottu</h3>
+
+                        <p>
+                            Sri Lankan style kottu with
+                            chicken and fresh vegetables.
+                        </p>
+
+                        <div class="food-bottom">
+                            <span>Rs. 950</span>
+                            <button class="add-button">Add to table</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="food-card" data-category="main">
+                    <div class="food-image" style="background-image: url('https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=85');"></div>
+
+                    <div class="food-info">
+
+                        <h3>Seafood Fried Rice</h3>
+
+                        <p>
+                            Fried rice prepared with
+                            fresh seafood and vegetables.
+                        </p>
+
+                        <div class="food-bottom">
+                            <span>Rs. 1,350</span>
+                            <button class="add-button">Add to table</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="food-card" data-category="starter">
+                    <div class="food-image" style="background-image: url('https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85');"></div>
+                    <div class="food-info">
+                        <h3>Charred Garden Salad</h3>
+                        <p>Seasonal greens, grilled vegetables, feta and lime dressing.</p>
+                        <div class="food-bottom"><span>Rs. 750</span><button class="add-button">Add to table</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card" data-category="dessert">
+                    <div class="food-image" style="background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85');"></div>
+                    <div class="food-info">
+                        <h3>Coconut Panna Cotta</h3>
+                        <p>Silky coconut cream, tropical fruit and toasted jaggery crumble.</p>
+                        <div class="food-bottom"><span>Rs. 650</span><button class="add-button">Add to table</button></div>
+                    </div>
+                </div>
+
+                <div class="food-card" data-category="drink">
+                    <div class="food-image" style="background-image: url('https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=900&q=85');"></div>
+                    <div class="food-info">
+                        <h3>Spiced Mango Cooler</h3>
+                        <p>Fresh mango, lime, mint and a little chili over crushed ice.</p>
+                        <div class="food-bottom"><span>Rs. 450</span><button class="add-button">Add to table</button></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+
+            <div class="about-image" role="img" aria-label="Warmly lit Spice and Savor restaurant dining room"></div>
+
+            <div class="about-content">
+
+                <p class="subtitle">ABOUT US</p>
+
+                <h2>Good Food, Great Memories</h2>
+
+                <p>
+                    At Spice & Savor, we bring together
+                    traditional flavors and modern dining.
+                    Our goal is to provide fresh and delicious
+                    food in a warm and welcoming environment.
+                </p>
+
+                <a href="#contact" class="primary-button">
+                    Learn More
+                </a>
+
+            </div>
+
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="section-heading">
+                <p class="subtitle">THE SPICE &amp; SAVOR MOOD</p>
+                <h2>A table worth gathering around.</h2>
+                <p>From our open kitchen to the last candle at dinner, every detail is made to be savored.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-image gallery-image-wide" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85');"></div>
+                <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=85');"></div>
+                <div class="gallery-image" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85');"></div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section id="reservation" class="reservation-section">
+
+            <div class="section-heading">
+
+                <p class="subtitle">RESERVATION</p>
+
+                <h2>Book Your Table</h2>
+
+                <p>
+                    Reserve your table and enjoy
+                    a wonderful dining experience.
+                </p>
+
+            </div>
+
+
+            <form id="reservation-form">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <input
+                    type="date"
+                    id="date"
+                    required
+                >
+
+                <input
+                    type="time"
+                    id="time"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="guests"
+                    placeholder="Number of Guests"
+                    min="1"
+                    required
+                >
+
+                <button type="submit">
+                    Reserve a Table
+                </button>
+                <p class="form-message" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer id="contact">
+
+        <h2>Spice & Savor</h2>
+
+        <p>
+            123 Main Street, Colombo, Sri Lanka
+        </p>
+
+        <p>
+            +94 77 123 4567
+        </p>
+
+        <p>
+            spicesavor@example.com
+        </p>
+
+        <p>
+            © 2026 Spice & Savor. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="Spice.js"></script>
+
+</body>
+</html>
